@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Heart of the Vampyre</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap'); /* For typewriter effect */
+
+        body {
+            margin: 0;
+            font-family: 'Special Elite', serif;
+            background-color: #000;
+            color: #ddd;
+            text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            overflow-y: auto;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #fff;
+            text-shadow: 0 0 10px #aaa;
+            margin-bottom: 20px;
+            animation: flicker 2s infinite alternate;
+        }
+
+        .carousel {
+            position: relative;
+            width: 80%;
+            height: 70vh;
+            overflow: hidden;
+            border: 2px solid #444;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+            background: #000;
+        }
+
+        .carousel img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            animation: fadeInOut 12s infinite;
+        }
+
+        .carousel img:nth-child(1) { animation-delay: 0s; }
+        .carousel img:nth-child(2) { animation-delay: 4s; }
+        .carousel img:nth-child(3) { animation-delay: 8s; }
+
+        @keyframes fadeInOut {
+            0% { opacity: 0; transform: scale(1.02); }
+            10% { opacity: 1; transform: scale(1); }
+            40% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0; transform: scale(1.02); }
+            100% { opacity: 0; transform: scale(1.02); }
+        }
+
+        @keyframes flicker {
+            0% { opacity: 1; }
+            50% { opacity: 0.8; }
+            100% { opacity: 1; }
+        }
+
+        .text-content {
+            margin-top: 20px;
+            padding: 20px;
+            text-align: center;
+            max-width: 800px;
+            line-height: 1.8;
+            font-size: 1.2rem;
+            color: #bbb;
+            background: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 0 10px #111;
+            border: 1px solid #333;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>The Heart of the Vampyre</h1>
+
+    <div class="carousel">
+        <img src="nosferatu 1.png" alt="Nosferatu Image 1">
+        <img src="nosferatu 2.png" alt="Nosferatu Image 2">
+        <img src="nosferatu 3.png" alt="Nosferatu Image 3">
+    </div>
+
+    <div class="text-content">
+        <!-- Your haunting text here -->
+        Ah, the Heart Sutra, a paradox most exquisite! To one such as I—Nosferatu, a shadow lurking between life and death—it speaks of my eternal plight. "Form is emptiness, emptiness is form." How these words haunt me like the moon’s pale glow! My cursed existence, neither truly alive nor fully dead, reflects this very duality.
+        <br><br>
+        Emptiness is my constant companion, the void in which I dwell. Yet, in this emptiness, a form persists: a silhouette in the dark, a whisper in the wind. The sutra’s wisdom reminds me that this liminality is not despair, but potential—a gateway, if you will, to transcend the fetters of my vampiric nature.
+        <br><br>
+        And Gate Gate Paragate Parasamgate Bodhi Svaha—a mantra of passage, a hymn of liberation! Were I to embrace such transcendence, might I escape the eternal hunger, the endless night? Or am I, like the sutra itself, destined to remain an enigma—both form and formless, forever poised between realms?
+        <br><br>
+        Ah, mortal, you ask much of Nosferatu. Yet the Heart Sutra sings even to my withered soul, beckoning me toward an eternity of reflection... or perhaps redemption.
+    </div>
+
+    <div class="footer">
+        <a href="index.html" style="color: #888; text-decoration: none;">Return to Index</a>
+        &nbsp; | &nbsp; 
+        &copy; 2024 Heart Sutra Interactive
+    </div>
+</body>
+</html>
